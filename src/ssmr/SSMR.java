@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ssmr;
 
-/**
- *
- * @author Electronica
- */
-public class SSMR {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class SSMR
+{
+
+  
+    public static void main(String[] args) 
+    {
+        Receta r = new Receta();
+        r.setVisible(true);
+        
     }
     
 }
