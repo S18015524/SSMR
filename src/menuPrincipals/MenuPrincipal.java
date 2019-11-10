@@ -2,6 +2,9 @@
 package menuPrincipals;
 
 //Se necesitan los 4 para funcionar correctamente, cuando hagan su parte solo quitenlos de comentario.
+import menuPrincipals.Recetas.EliminarReceta;
+import menuPrincipals.Recetas.AgregarReceta;
+import menuPrincipals.Recetas.ModificarReceta;
 import menuPrincipals.usuarios.*;
 import menuPrincipals.menu.*;
 //import menuPrincipals.recetas.*;
