@@ -35,6 +35,7 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Contraseña");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, -1, -1));
 
+        BLogin.setBackground(new java.awt.Color(255, 204, 0));
         BLogin.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BLogin.setText("Iniciar Sesión");
         BLogin.setBorderPainted(false);
@@ -47,12 +48,17 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(BLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 500, -1, -1));
 
         TUser.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        getContentPane().add(TUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, 234, -1));
+        TUser.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TUser.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TUser.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        getContentPane().add(TUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, 240, 30));
 
         PPass.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        getContentPane().add(PPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 234, -1));
+        PPass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        PPass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(PPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 240, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-gui-log.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-guilog.png")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
