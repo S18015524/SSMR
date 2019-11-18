@@ -2,12 +2,10 @@
 package menuPrincipals;
 
 //Se necesitan los 4 para funcionar correctamente, cuando hagan su parte solo quitenlos de comentario.
-import menuPrincipals.Recetas.EliminarReceta;
-import menuPrincipals.Recetas.AgregarReceta;
-import menuPrincipals.Recetas.ModificarReceta;
+import javax.swing.JOptionPane;
+import menuPrincipals.Recetas.*;
 import menuPrincipals.usuarios.*;
 import menuPrincipals.menu.*;
-//import menuPrincipals.recetas.*;
 //import menuPrincipals.stock.*;
 
 
@@ -48,8 +46,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         MInfo = new javax.swing.JMenuItem();
         MCloseSes = new javax.swing.JMenuItem();
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-gui.png")); // NOI18N
-
         jLabel4.setText("jLabel4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -71,20 +67,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         BManual.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BManual.setText("Manualmente");
         BManual.setBorderPainted(false);
-        BManual.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BManual.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         BAuto.setBackground(new java.awt.Color(245, 227, 173));
         BAuto.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BAuto.setText("Automaticamente");
         BAuto.setBorderPainted(false);
-        BAuto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BAuto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BAuto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BAutoActionPerformed(evt);
             }
         });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\menugui.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -121,7 +115,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton4.setText("Agregar");
         jButton4.setAlignmentY(0.0F);
         jButton4.setBorderPainted(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton4.setMaximumSize(new java.awt.Dimension(101, 31));
         jButton4.setMinimumSize(new java.awt.Dimension(101, 31));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +128,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jButton5.setText("Modficar");
         jButton5.setBorderPainted(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -145,14 +139,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton6.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jButton6.setText("Eliminar");
         jButton6.setBorderPainted(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\usuariogui.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -190,7 +182,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jButton1.setText("Agregar");
         jButton1.setBorderPainted(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setDoubleBuffered(true);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +194,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jButton2.setText("Modficar");
         jButton2.setBorderPainted(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -213,14 +205,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jButton3.setText("Eliminar");
         jButton3.setBorderPainted(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\libro-de-recetasgui2.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -261,7 +251,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         BAgregarI.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BAgregarI.setText("Agregar");
         BAgregarI.setBorderPainted(false);
-        BAgregarI.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BAgregarI.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BAgregarI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BAgregarIActionPerformed(evt);
@@ -272,15 +262,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         BModificarI.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BModificarI.setText("Modificar");
         BModificarI.setBorderPainted(false);
-        BModificarI.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BModificarI.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         BEliminarI.setBackground(new java.awt.Color(245, 227, 173));
         BEliminarI.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BEliminarI.setText("Eliminar");
         BEliminarI.setBorderPainted(false);
-        BEliminarI.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\comestiblesgui.png")); // NOI18N
+        BEliminarI.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -320,6 +308,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         MInfo.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         MInfo.setText("Informacion");
+        MInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MInfoActionPerformed(evt);
+            }
+        });
         jMenu1.add(MInfo);
 
         MCloseSes.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -371,14 +364,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        ModificarReceta ver = new ModificarReceta();
-        ver.setVisible(true);
+        ModificarUsuario modificar= new ModificarUsuario();
+        modificar.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        AgregarReceta ver = new AgregarReceta();
-        ver.setVisible(true);
+        AgregarUsuario agregar=new AgregarUsuario();
+        agregar.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -392,6 +385,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void BAgregarIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAgregarIActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BAgregarIActionPerformed
+
+    private void MInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MInfoActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Ventana emergente con la informacion personal del usuario actual.");
+    }//GEN-LAST:event_MInfoActionPerformed
 
     /**
      * @param args the command line arguments
