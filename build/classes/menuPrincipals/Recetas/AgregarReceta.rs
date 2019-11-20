@@ -1,4 +1,0 @@
-menuPrincipals.Recetas.AgregarReceta
-menuPrincipals.Recetas.AgregarReceta$2
-menuPrincipals.Recetas.AgregarReceta$3
-menuPrincipals.Recetas.AgregarReceta$1

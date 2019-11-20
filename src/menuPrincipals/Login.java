@@ -58,7 +58,7 @@ public class Login extends javax.swing.JFrame {
         PPass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(PPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 240, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-guilog.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/ssmr-guilog.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();

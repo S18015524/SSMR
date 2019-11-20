@@ -27,42 +27,41 @@ public class Logo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-gui1.png")); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setDefaultCapable(false);
-        jButton1.setFocusPainted(false);
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\logo-gui2.png")); // NOI18N
-        jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\logo-gui2.png")); // NOI18N
-        jButton1.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\logo-gui2.png")); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/ssmr-gui1.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setFocusPainted(false);
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/logo-gui2.png"))); // NOI18N
+        jButton2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/logo-gui2.png"))); // NOI18N
+        jButton2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/logo-gui2.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 600, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 600, 340));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-gui.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/ssmr-gui.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Login iniciar = new Login();
         iniciar.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,7 +99,7 @@ public class Logo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

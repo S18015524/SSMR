@@ -97,7 +97,7 @@ public class ModificarReceta extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, 160, 33));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\TheHu\\Downloads\\ssmr-gui.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/ssmr-gui.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();

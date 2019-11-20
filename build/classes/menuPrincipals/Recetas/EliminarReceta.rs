@@ -1,3 +1,0 @@
-menuPrincipals.Recetas.EliminarReceta$2
-menuPrincipals.Recetas.EliminarReceta
-menuPrincipals.Recetas.EliminarReceta$1

@@ -135,6 +135,8 @@ public class AgregarReceta extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(245, 227, 173));
         jLabel7.setText("Agregar Receta");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/ssmr-gui.png"))); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();

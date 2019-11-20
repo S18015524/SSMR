@@ -1,3 +1,0 @@
-menuPrincipals.Recetas.ModificarReceta$2
-menuPrincipals.Recetas.ModificarReceta$1
-menuPrincipals.Recetas.ModificarReceta
