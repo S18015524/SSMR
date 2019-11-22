@@ -110,7 +110,7 @@ public class EliminarReceta extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        MenuPrincipal ver = new MenuPrincipal();
+        MenuPrincipal ver = new MenuPrincipal(2);
         ver.setVisible(true);
         dispose();       
         

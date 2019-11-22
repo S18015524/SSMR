@@ -11,9 +11,10 @@ import menuPrincipals.menu.*;
 
 public class MenuPrincipal extends javax.swing.JFrame {
 
-    public MenuPrincipal() {
+    public MenuPrincipal(int select) {
         
         initComponents();
+        jTabbedPane6.setSelectedIndex(select);
     }
 
     @SuppressWarnings("unchecked")
@@ -434,7 +435,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MenuPrincipal().setVisible(true);
+                new MenuPrincipal(0).setVisible(true);
             }
         });
     }

@@ -113,7 +113,7 @@ public class EliminarUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
         int choice = JOptionPane.showConfirmDialog(this, "Estas seguro de cancelar el registro?", "Confirmacion", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         if (choice == 0) {
-            MenuPrincipal mp = new MenuPrincipal();
+            MenuPrincipal mp = new MenuPrincipal(1);
             mp.setVisible(true);
             dispose();
         }

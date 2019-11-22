@@ -72,7 +72,7 @@ public class Login extends javax.swing.JFrame {
 
         if (TUser.getText().equals(usuario) && PPass.getText().equals(contra)) {
             JOptionPane.showMessageDialog(this, "Bienvenido\nUser, que tengas un bonito dia.", "Ingreso correcto", JOptionPane.INFORMATION_MESSAGE);
-            MenuPrincipal mp = new MenuPrincipal();
+            MenuPrincipal mp = new MenuPrincipal(0);
             mp.setVisible(true);
             dispose();
         } else {

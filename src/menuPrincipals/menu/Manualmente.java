@@ -168,7 +168,7 @@ public class Manualmente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        MenuPrincipal ver = new MenuPrincipal();
+        MenuPrincipal ver = new MenuPrincipal(0);
         ver.setVisible(true);
         dispose();
 

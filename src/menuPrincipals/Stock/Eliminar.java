@@ -117,7 +117,7 @@ public class Eliminar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        MenuPrincipal a = new MenuPrincipal();
+        MenuPrincipal a = new MenuPrincipal(3);
         a.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
