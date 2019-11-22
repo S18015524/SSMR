@@ -1,6 +1,12 @@
 package menuPrincipals.usuarios;
 
+import java.awt.Image;
+import java.io.File;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import menuPrincipals.MenuPrincipal;
 
 public class ModificarInformacion extends javax.swing.JFrame {
@@ -44,15 +50,23 @@ public class ModificarInformacion extends javax.swing.JFrame {
         CDia = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         CMes = new javax.swing.JComboBox<>();
+        jLabel14 = new javax.swing.JLabel();
+        BImagen1 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         CAnno.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         CAnno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Año", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013" }));
+        getContentPane().add(CAnno, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 490, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Fecha de nacimiento");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, -1, -1));
 
+        BGenerar.setBackground(new java.awt.Color(229, 178, 47));
         BGenerar.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         BGenerar.setText("Modificar");
         BGenerar.addActionListener(new java.awt.event.ActionListener() {
@@ -60,16 +74,23 @@ public class ModificarInformacion extends javax.swing.JFrame {
                 BGenerarActionPerformed(evt);
             }
         });
+        getContentPane().add(BGenerar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Apellido materno");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
         TNombre.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        getContentPane().add(TNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 171, -1));
 
         TAM.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        getContentPane().add(TAM, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 171, -1));
 
         TAP.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        getContentPane().add(TAP, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 171, -1));
 
+        BVaciar.setBackground(new java.awt.Color(229, 178, 47));
         BVaciar.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         BVaciar.setText("Vaciar");
         BVaciar.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +98,9 @@ public class ModificarInformacion extends javax.swing.JFrame {
                 BVaciarActionPerformed(evt);
             }
         });
+        getContentPane().add(BVaciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 560, -1, -1));
 
+        BCancelar.setBackground(new java.awt.Color(229, 178, 47));
         BCancelar.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         BCancelar.setText("Cancelar");
         BCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -85,21 +108,31 @@ public class ModificarInformacion extends javax.swing.JFrame {
                 BCancelarActionPerformed(evt);
             }
         });
+        getContentPane().add(BCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(571, 559, -1, -1));
 
         TTelefono.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        getContentPane().add(TTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 171, -1));
 
         TDireccion.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        getContentPane().add(TDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 171, -1));
 
         TCorreo.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        getContentPane().add(TCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 171, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Direccion");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, -1));
 
         LImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/IconUser1.png"))); // NOI18N
+        getContentPane().add(LImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 110, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Estado civil");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, -1, -1));
 
+        BImagen.setBackground(new java.awt.Color(229, 178, 47));
         BImagen.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         BImagen.setText("Cargar imagen");
         BImagen.addActionListener(new java.awt.event.ActionListener() {
@@ -107,24 +140,35 @@ public class ModificarInformacion extends javax.swing.JFrame {
                 BImagenActionPerformed(evt);
             }
         });
+        getContentPane().add(BImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, -1, -1));
 
         CEstadoC.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         CEstadoC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione uno", "Solter@", "Casad@", "Divorciad@", "Viud@" }));
+        getContentPane().add(CEstadoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, 325, -1));
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel11.setText("Telefono");
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Correo");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Nombre(s)");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(245, 227, 173));
         jLabel1.setText("Modificar usuario");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 12, -1, -1));
 
         CDia.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         CDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dia" }));
+        getContentPane().add(CDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, 129, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Apellido paterno");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
         CMes.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         CMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mes", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
@@ -133,122 +177,27 @@ public class ModificarInformacion extends javax.swing.JFrame {
                 CMesActionPerformed(evt);
             }
         });
+        getContentPane().add(CMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 490, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 744, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addGap(162, 162, 162)
-                            .addComponent(BGenerar)
-                            .addGap(79, 79, 79)
-                            .addComponent(BVaciar)
-                            .addGap(78, 78, 78)
-                            .addComponent(BCancelar)
-                            .addGap(117, 117, 117))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel5)
-                                        .addComponent(jLabel6)
-                                        .addComponent(jLabel7)
-                                        .addComponent(jLabel8))
-                                    .addGap(74, 74, 74)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(TDireccion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                                        .addComponent(TAP, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(TNombre)
-                                        .addComponent(TAM, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel12)
-                                    .addGap(28, 28, 28)
-                                    .addComponent(CEstadoC, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel11)
-                                    .addGap(133, 133, 133)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(TTelefono, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                                        .addComponent(TCorreo))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(BImagen)
-                                    .addGap(52, 52, 52))
-                                .addComponent(LImagen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(293, 293, 293)
-                                    .addComponent(jLabel1))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel13)
-                                    .addGap(42, 42, 42)
-                                    .addComponent(CMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(CDia, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(45, 45, 45)
-                                    .addComponent(CAnno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGap(158, 158, 158)))
-                    .addContainerGap()))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 493, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jLabel1)
-                    .addGap(43, 43, 43)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(LImagen)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel5)
-                                .addComponent(TNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(17, 17, 17)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel6)
-                                .addComponent(TAP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(23, 23, 23)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel7)
-                                .addComponent(TAM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel8)
-                                .addComponent(TDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGap(23, 23, 23)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(BImagen)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel11)
-                                .addComponent(TTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(23, 23, 23)
-                            .addComponent(TCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel12)
-                                .addComponent(CEstadoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(CDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(CAnno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel13)
-                        .addComponent(CMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(34, 34, 34)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(BGenerar)
-                        .addComponent(BVaciar)
-                        .addComponent(BCancelar))
-                    .addContainerGap()))
-        );
+        jLabel14.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Telefono");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, -1, -1));
+
+        BImagen1.setBackground(new java.awt.Color(229, 178, 47));
+        BImagen1.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        BImagen1.setText("Eliminar imagen");
+        BImagen1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BImagen1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BImagen1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuPrincipals/Extras/ssmr-gui.png"))); // NOI18N
+        jLabel9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
+        jLabel9.getAccessibleContext().setAccessibleParent(null);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -309,15 +258,17 @@ public class ModificarInformacion extends javax.swing.JFrame {
 
     private void BImagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BImagenActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "En proceso ...");
-        /*JFileChooser jf = new JFileChooser();
+        JFileChooser jf = new JFileChooser();
         jf.setDialogTitle("Buscar foto o imagen");
-
+        FileNameExtensionFilter filtro = new FileNameExtensionFilter("JPG y PNG", "jpg", "png");
+        jf.setFileFilter(filtro);
         if (jf.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
             File archivo = new File(jf.getSelectedFile().toString());
-
-            LImagen.setIcon(jf.getSelectedFile().toString());
-        }*/
+            ImageIcon icono = new ImageIcon(archivo.toString());
+            Icon icono2 = new ImageIcon(icono.getImage().getScaledInstance(LImagen.getWidth(), LImagen.getHeight(), Image.SCALE_DEFAULT));
+            LImagen.setText(null);
+            LImagen.setIcon(icono2);
+        }
     }//GEN-LAST:event_BImagenActionPerformed
 
     private void CMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CMesActionPerformed
@@ -343,6 +294,14 @@ public class ModificarInformacion extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_CMesActionPerformed
 
+    private void BImagen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BImagen1ActionPerformed
+        // TODO add your handling code here:aa
+        ImageIcon imagenInterna = new ImageIcon(
+                getClass().getResource("/menuPrincipals/Extras/IconUser1.png")
+        );
+        LImagen.setIcon(imagenInterna);
+    }//GEN-LAST:event_BImagen1ActionPerformed
+
     public void dias(int cantidad) {
         String aux = "";
         CDia.removeAllItems();
@@ -363,7 +322,7 @@ public class ModificarInformacion extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -391,6 +350,7 @@ public class ModificarInformacion extends javax.swing.JFrame {
     private javax.swing.JButton BCancelar;
     private javax.swing.JButton BGenerar;
     private javax.swing.JButton BImagen;
+    private javax.swing.JButton BImagen1;
     private javax.swing.JButton BVaciar;
     private javax.swing.JComboBox<String> CAnno;
     private javax.swing.JComboBox<String> CDia;
@@ -407,9 +367,11 @@ public class ModificarInformacion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
