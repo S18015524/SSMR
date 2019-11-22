@@ -1,7 +1,7 @@
 package menuPrincipals.usuarios;
 
 import java.awt.Image;
-import java.io.File;
+import java.io.*;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -239,11 +239,12 @@ public class AgregarUsuario extends javax.swing.JFrame {
                 + "\nEstado civil: " + CEstadoC.getSelectedItem();
 
         if (!(TUser.getText().equals("") || PPass1.getText().equals("") || PPass2.getText().equals("") || TNombre.getText().equals("") || TAP.getText().equals("") || TAM.getText().equals("")
-                || TDireccion.getText().equals("") || CAnno.getSelectedIndex() == 0 || CMes.getSelectedIndex() == 0)) {
+                || TDireccion.getText().equals("") || CAnno.getSelectedIndex() == 0 || CMes.getSelectedIndex() == 0 || CEstadoC.getSelectedIndex()==0)) {
             if (PPass1.getText().equals(PPass2.getText())) {
                 int choice = JOptionPane.showConfirmDialog(this, "Los datos ingresados son correctos?.\n" + fin, "Confirmacion", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
                 if (choice == 0) {
                     JOptionPane.showMessageDialog(this, "Datos ingresado correctamente");
+                    ingresarDatos();
                     MenuPrincipal mp = new MenuPrincipal(1);
                     mp.setVisible(true);
                     dispose();
@@ -343,6 +344,67 @@ public class AgregarUsuario extends javax.swing.JFrame {
         for (int i = 1; i <= cantidad; i++) {
             aux = Integer.toString(i);
             CDia.addItem(aux);
+        }
+    }
+
+    public void ingresarDatos() {
+        String nacer = CDia.getSelectedItem() + "/" + CMes.getSelectedItem() + "/" + CAnno.getSelectedItem();
+        Usuario usuario = new Usuario(TNombre.getText(),
+                 TAP.getText(),
+                 TAM.getText(),
+                 TDireccion.getText(),
+                 TTelefono.getText(),
+                 nacer,
+                 TCorreo.getText(),
+                 String.valueOf(CEstadoC.getSelectedItem()));
+
+        char[] pass = PPass1.getPassword();
+        String pass2 = "";
+        for (int i = 0; i < pass.length; i++) {
+            pass2 = pass2 + pass[i];
+        }
+        String userPass = TUser.getText() + "," + pass2;
+        
+        FileWriter archivo = null;
+        PrintWriter pw;
+
+        FileWriter archivo2 = null;
+        PrintWriter pw2;
+
+        try {
+            archivo = new FileWriter("Empleados.txt", true);
+            pw = new PrintWriter(archivo);
+
+            pw.println(usuario.toString());
+
+        } catch (IOException e) {
+
+        } finally {
+            try {
+                if (archivo != null) {
+                    archivo.close();
+                }
+            } catch (IOException e2) {
+                JOptionPane.showMessageDialog(this, "Error al crear el archivo de texto", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+
+        try {
+            archivo2 = new FileWriter("Usuarios.txt", true);
+            pw2 = new PrintWriter(archivo2);
+
+            pw2.println(userPass);
+
+        } catch (IOException e) {
+
+        } finally {
+            try {
+                if (archivo2 != null) {
+                    archivo2.close();
+                }
+            } catch (IOException e2) {
+                JOptionPane.showMessageDialog(this, "Error al crear el archivo de texto", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }
 
